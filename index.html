@@ -11,7 +11,10 @@
             margin: 0;
             padding: 20px;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
+            gap: 24px;
         }
         .canvas-container {
             display: grid;
@@ -66,6 +69,106 @@
             padding: 10px 0;
         }
         .header h1 { margin: 0; font-size: 1.5rem; }
+
+        .value-canvas-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .value-canvas-title {
+            margin: 0 0 14px 0;
+            color: #1e3a66;
+            font-size: 1.6rem;
+        }
+
+        .value-canvas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .value-side,
+        .customer-side {
+            border: 3px solid #1f1f1f;
+            border-radius: 8px;
+            background: #fff;
+            padding: 14px;
+        }
+
+        .value-side h3,
+        .customer-side h3 {
+            margin: 0 0 10px 0;
+            color: #2b2b2b;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        .canvas-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .canvas-grid.three {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .canvas-grid.two {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .sticky {
+            border-radius: 8px;
+            min-height: 84px;
+            padding: 10px;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+        }
+
+        .sticky h4 {
+            margin: 0 0 7px 0;
+            font-size: .85rem;
+            color: #1d1d1d;
+        }
+
+        .sticky ul {
+            margin: 0;
+            padding-left: 16px;
+            font-size: .82rem;
+            color: #202020;
+        }
+
+        .sticky li { margin-bottom: 5px; }
+
+        .yellow { background: #ffef66; }
+        .green { background: #64ef81; }
+        .purple { background: #d67bff; }
+        .blue { background: #b8defc; }
+
+        @media (max-width: 980px) {
+            .value-canvas {
+                grid-template-columns: 1fr;
+            }
+            .canvas-grid.three,
+            .canvas-grid.two {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                gap: 8px;
+            }
+            .canvas-container,
+            .value-canvas-wrapper {
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -173,5 +276,76 @@
             </ul>
         </div>
     </div>
+
+    <section class="value-canvas-wrapper">
+        <h2 class="value-canvas-title">Canvas de Proposta de Valor: Entregas via Drone</h2>
+        <div class="value-canvas">
+            <article class="value-side">
+                <h3>Lado da Empresa (Mapa de Valor)</h3>
+                <div class="canvas-grid three">
+                    <div class="sticky yellow">
+                        <h4>Produtos & Serviços</h4>
+                        <ul>
+                            <li>Entrega por drones</li>
+                            <li>App e site para pedidos</li>
+                            <li>Integração com e-commerces</li>
+                            <li>Planos de assinatura</li>
+                        </ul>
+                    </div>
+                    <div class="sticky green">
+                        <h4>Criadores de Ganho</h4>
+                        <ul>
+                            <li>Entrega ultra-rápida</li>
+                            <li>Conveniência na janela/porta</li>
+                            <li>Rastreamento em tempo real</li>
+                            <li>Experiência tecnológica</li>
+                        </ul>
+                    </div>
+                    <div class="sticky purple">
+                        <h4>Aliviadores de Dor</h4>
+                        <ul>
+                            <li>Menos atraso de trânsito</li>
+                            <li>Processo automatizado e seguro</li>
+                            <li>Suporte digital contínuo</li>
+                            <li>Maior previsibilidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="customer-side">
+                <h3>Lado do Cliente (Perfil)</h3>
+                <div class="canvas-grid three">
+                    <div class="sticky yellow">
+                        <h4>Tarefas do Cliente</h4>
+                        <ul>
+                            <li>Receber compras rapidamente</li>
+                            <li>Enviar itens urgentes</li>
+                            <li>Acompanhar status do pedido</li>
+                            <li>Evitar deslocamentos</li>
+                        </ul>
+                    </div>
+                    <div class="sticky green">
+                        <h4>Ganhos</h4>
+                        <ul>
+                            <li>Agilidade e praticidade</li>
+                            <li>Mais autonomia no dia a dia</li>
+                            <li>Maior confiança na entrega</li>
+                            <li>Solução moderna e sustentável</li>
+                        </ul>
+                    </div>
+                    <div class="sticky blue">
+                        <h4>Dores</h4>
+                        <ul>
+                            <li>Demora em entregas comuns</li>
+                            <li>Incerteza de horário</li>
+                            <li>Risco de extravio/atraso</li>
+                            <li>Custo alto em urgências</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 </body>
 </html>
