@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model Canvas - Entregas via Drone</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .canvas-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .section {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            min-height: 150px;
+        }
+        .section h3 {
+            margin-top: 0;
+            font-size: 0.9rem;
+            color: #555;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .section ul {
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+            font-size: 0.85rem;
+            color: #333;
+        }
+        .section li {
+            margin-bottom: 8px;
+        }
+        /* Grid Layout */
+        .key-partners { grid-column: 1; grid-row: 1 / 3; }
+        .key-activities { grid-column: 2; grid-row: 1; }
+        .key-resources { grid-column: 2; grid-row: 2; }
+        .value-propositions { grid-column: 3; grid-row: 1 / 3; background-color: #fffbe6; }
+        .customer-relationships { grid-column: 4; grid-row: 1; }
+        .channels { grid-column: 4; grid-row: 2; }
+        .customer-segments { grid-column: 5; grid-row: 1 / 3; }
+        .cost-structure { grid-column: 1 / 3; grid-row: 3; }
+        .revenue-streams { grid-column: 3 / 6; grid-row: 3; }
+
+        .header {
+            grid-column: 1 / 6;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+        .header h1 { margin: 0; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <div class="header">
+            <h1>Business Model Canvas: Entregas via Drone</h1>
+        </div>
+
+        <!-- Parceiros Chave -->
+        <div class="section key-partners">
+            <h3>🤝 Parceiros Chave</h3>
+            <ul>
+                <li>Fabricantes e fornecedores de Drones (Hardware)</li>
+                <li>Desenvolvedores de Software de navegação</li>
+                <li>Órgãos reguladores de aviação (ANAC/DECEA)</li>
+                <li>Empresas de seguros para frotas aéreas</li>
+            </ul>
+        </div>
+
+        <!-- Atividades Chave -->
+        <div class="section key-activities">
+            <h3>⚙️ Atividades Chave</h3>
+            <ul>
+                <li>Gestão Logística de entregas de última milha</li>
+                <li>Manutenção preventiva e corretiva dos drones</li>
+                <li>Desenvolvimento e atualização de software de rota</li>
+                <li>Monitoramento de voos em tempo real</li>
+            </ul>
+        </div>
+
+        <!-- Recursos Chave -->
+        <div class="section key-resources">
+            <h3>🛠️ Recursos Chave</h3>
+            <ul>
+                <li>Frota de Drones (Hardware de alta tecnologia)</li>
+                <li>Software de automação e controle de tráfego</li>
+                <li>Infraestrutura de estacionamento e recarga (Hubs)</li>
+                <li>Equipe técnica especializada em manutenção</li>
+            </ul>
+        </div>
+
+        <!-- Proposta de Valor -->
+        <div class="section value-propositions">
+            <h3>💡 Proposta de Valor</h3>
+            <ul>
+                <li><strong>Entrega Ultra-Rápida:</strong> Redução drástica no tempo de espera.</li>
+                <li><strong>Conveniência Total:</strong> Entrega na janela ou porta de casa.</li>
+                <li><strong>Sem Preocupações:</strong> Processo automatizado e seguro.</li>
+                <li><strong>Sustentabilidade:</strong> Redução da pegada de carbono comparado a veículos terrestres.</li>
+            </ul>
+        </div>
+
+        <!-- Relacionamento com Clientes -->
+        <div class="section customer-relationships">
+            <h3>❤️ Relacionamento</h3>
+            <ul>
+                <li>Presença ativa em Redes Sociais</li>
+                <li>Campanhas de Marketing e Propagandas na TV</li>
+                <li>Suporte ao cliente via App/Site</li>
+                <li>Programas de fidelidade para usuários frequentes</li>
+            </ul>
+        </div>
+
+        <!-- Canais -->
+        <div class="section channels">
+            <h3>🚚 Canais</h3>
+            <ul>
+                <li>Aplicativos de delivery parceiros (Marketplaces)</li>
+                <li>Rede de Franquias parceiras</li>
+                <li>Site oficial da empresa</li>
+                <li>Integração direta com e-commerces</li>
+            </ul>
+        </div>
+
+        <!-- Segmentos de Clientes -->
+        <div class="section customer-segments">
+            <h3>👥 Segmentos de Clientes</h3>
+            <ul>
+                <li>Consumidores frequentes de compras online</li>
+                <li>Pessoas com necessidade de entregas urgentes (remédios, documentos)</li>
+                <li>Entusiastas de tecnologia e inovação</li>
+                <li>Empresas B2B que precisam de logística ágil</li>
+            </ul>
+        </div>
+
+        <!-- Estrutura de Custos -->
+        <div class="section cost-structure">
+            <h3>💰 Estrutura de Custos</h3>
+            <ul>
+                <li>Aquisição e atualização da frota de drones</li>
+                <li>Manutenção técnica e operacional</li>
+                <li>Investimento em Publicidade e Marketing</li>
+                <li>Custos logísticos e operacionais dos Hubs</li>
+            </ul>
+        </div>
+
+        <!-- Fontes de Receita -->
+        <div class="section revenue-streams">
+            <h3>💵 Fontes de Receita</h3>
+            <ul>
+                <li>Contratos de prestação de serviço com empresas de entrega</li>
+                <li>Taxas de entrega por voo (Premium/Urgente)</li>
+                <li>Assinaturas mensais para entregas ilimitadas</li>
+                <li>Parcerias publicitárias nos drones/embalagens</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Business Model Canvas: Entregas via Drone
+
+| **Parceiros Chave** | **Atividades Chave** | **Proposta de Valor** | **Relacionamento** | **Segmentos de Clientes** |
+| :--- | :--- | :--- | :--- | :--- |
+| - Fabricantes de Drones<br>- Desenvolvedores de Software<br>- Órgãos Reguladores (ANAC)<br>- Empresas de Seguros | - Gestão Logística<br>- Manutenção dos Drones<br>- Monitoramento de Voos<br>- Desenvolvimento de Software | - Entrega Ultra-Rápida<br>- Conveniência (na janela)<br>- Processo Seguro e Automatizado<br>- Sustentabilidade | - Redes Sociais<br>- Propagandas na TV<br>- Suporte via App/Site<br>- Programas de Fidelidade | - Compradores Online<br>- Entregas Urgentes<br>- Entusiastas de Tecnologia<br>- Empresas B2B |
+| | **Recursos Chave** | | **Canais** | |
+| | - Frota de Drones<br>- Software de Navegação<br>- Hubs de Estacionamento<br>- Equipe Técnica | | - Apps Parceiros<br>- Franquias Parceiras<br>- Site da Empresa<br>- Integração E-commerce | |
+
+---
+
+| **Estrutura de Custos** | **Fontes de Receita** |
+| :--- | :--- |
+| - Aquisição e Manutenção de Drones<br>- Investimento em Publicidade<br>- Custos Logísticos e Operacionais<br>- P&D em Software | - Contratos com Empresas de Entrega<br>- Taxas por Entrega (Premium/Urgente)<br>- Assinaturas de Serviço<br>- Parcerias Publicitárias |
