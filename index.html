@@ -165,9 +165,111 @@
                 gap: 8px;
             }
             .canvas-container,
-            .value-canvas-wrapper {
+            .value-canvas-wrapper,
+            .intro-section {
                 box-shadow: none;
             }
+        }
+
+        /* Estilos para Seções Introdutórias */
+        .intro-section {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            margin-bottom: 20px;
+        }
+
+        .intro-section h2 {
+            color: #1e3a66;
+            font-size: 1.8rem;
+            margin: 0 0 16px 0;
+            border-bottom: 3px solid #1e3a66;
+            padding-bottom: 12px;
+        }
+
+        .intro-section h3 {
+            color: #2b5aa0;
+            font-size: 1.3rem;
+            margin: 20px 0 12px 0;
+        }
+
+        .intro-section h4 {
+            color: #333;
+            font-size: 1.1rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .intro-section p {
+            color: #444;
+            line-height: 1.8;
+            margin: 12px 0;
+            font-size: 0.95rem;
+        }
+
+        .intro-section ul, .intro-section ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+
+        .intro-section li {
+            margin-bottom: 8px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .values-table, .pastel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            border: 1px solid #ddd;
+        }
+
+        .values-table th, .pastel-table th {
+            background-color: #1e3a66;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .values-table td, .pastel-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .values-table tr:hover, .pastel-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .pain-point {
+            background-color: #ffe6e6;
+            padding: 12px;
+            border-left: 4px solid #e74c3c;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+
+        .opportunity {
+            background-color: #e6ffe6;
+            padding: 12px;
+            border-left: 4px solid #27ae60;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box {
+            background-color: #f0f5ff;
+            border: 2px solid #1e3a66;
+            border-radius: 6px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .emoji {
+            margin-right: 6px;
         }
     </style>
 </head>
@@ -274,6 +376,19 @@
         </div>
     </div>
 
+    <!-- SEÇÃO 2.1: INTRODUÇÃO -->
+    <section class="intro-section">
+        <h2>2.1 Introdução</h2>
+        <p>O mercado de e-commerce no Brasil continua em expansão acelerada, com crescimento em torno de 16-20% ao ano. Paralelamente, a demanda por entregas rápidas e confiáveis nunca foi tão alta. No entanto, a logística tradicional de última milha (last-mile delivery) enfrenta desafios críticos:</p>
+        <ul>
+            <li><strong>Custos elevados:</strong> Representam 50-60% do custo logístico total</li>
+            <li><strong>Impacto ambiental:</strong> Emissões de CO2 significativas em áreas urbanas</li>
+            <li><strong>Limitações operacionais:</strong> Congestionamento, horários restritos, entregas com atraso</li>
+        </ul>
+        <p>A tecnologia de drones autônomos apresenta-se como uma <strong>solução inovadora e viável</strong> para revolucionar este cenário. Com capacidade de entregas rápidas (15-45 minutos), custos operacionais reduzidos e menor impacto ambiental, os drones se posicionam como a próxima revolução na logística urbana.</p>
+        <p style="font-style: italic; color: #555;">Este documento apresenta a análise estratégica da viabilidade de uma plataforma de entregas via drone, explorando seus aspectos comerciais, tecnológicos, regulatórios e de mercado.</p>
+    </section>
+
     <section class="value-canvas-wrapper">
         <h2 class="value-canvas-title">Canvas de Proposta de Valor: Entregas via Drone</h2>
         <div class="value-canvas">
@@ -342,5 +457,307 @@
             </article>
         </div>
     </section>
-</body>
+
+    <!-- SEÇÃO 2.2: MISSÃO, VISÃO E VALORES -->
+    <section class="intro-section">
+        <h2>2.2 Missão, Visão e Valores</h2>
+        
+        <h3>🎯 Missão</h3>
+        <p>Revolucionar a logística urbana através de tecnologia de drones sustentável, acessível e confiável, oferecendo soluções de entrega ultra-rápida que conectam empresas e consumidores de forma inovadora.</p>
+        
+        <h3>🔭 Visão</h3>
+        <p>Ser a principal plataforma de entrega por drone em cidades brasileiras até 2030, transformando a relação entre consumidores e serviços logísticos, consolidando a confiança na tecnologia autônoma.</p>
+        
+        <h3>💎 Valores</h3>
+        <table class="values-table">
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>🚀 Inovação</strong></td>
+                    <td>Busca constante por soluções tecnológicas de ponta que superem os padrões atuais de mercado</td>
+                </tr>
+                <tr>
+                    <td><strong>🛡️ Segurança</strong></td>
+                    <td>Comprometimento absoluto com a segurança de pessoas, bens e infraestrutura urbana</td>
+                </tr>
+                <tr>
+                    <td><strong>🌱 Sustentabilidade</strong></td>
+                    <td>Redução de impacto ambiental e promoção de práticas eco-friendly em todas operações</td>
+                </tr>
+                <tr>
+                    <td><strong>✅ Confiabilidade</strong></td>
+                    <td>Entrega consistente, pontual e rastreável de todos os pedidos</td>
+                </tr>
+                <tr>
+                    <td><strong>👥 Acessibilidade</strong></td>
+                    <td>Disponibilizar serviços de qualidade a preços competitivos para diversos segmentos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SEÇÃO 2.3: CANVAS DA PROPOSTA DE VALOR - DORES -->
+    <section class="intro-section">
+        <h2>2.3 Canvas da Proposta de Valor: Dores dos Clientes</h2>
+        
+        <h3>Segmentos de Clientes: Dores Identificadas</h3>
+        
+        <h4>👤 Compradores Online (B2C)</h4>
+        <div class="pain-point">❌ Entregas demoram dias úteis completos</div>
+        <div class="pain-point">❌ Prazos incertos e alterações frequentes</div>
+        <div class="pain-point">❌ Custos de frete elevados</div>
+        <div class="pain-point">❌ Restrições de horários de entrega</div>
+        
+        <h4>🏢 Empresas B2B (Logísticas, E-commerce)</h4>
+        <div class="pain-point">❌ Custos operacionais crescentes</div>
+        <div class="pain-point">❌ Pressão por reduzir tempo de entrega</div>
+        <div class="pain-point">❌ Dificuldade em cumprir prazos em períodos de pico</div>
+        <div class="pain-point">❌ Emissões de carbono aumentando (responsabilidade ESG)</div>
+        
+        <h4>⚕️ Entregas Urgentes (Saúde, Alimentos Perecíveis)</h4>
+        <div class="pain-point">❌ Risco de deterioração de produtos</div>
+        <div class="pain-point">❌ Impossibilidade de atender demandas com janelas horárias extremas</div>
+        <div class="pain-point">❌ Custos de transporte especializado muito elevados</div>
+        
+        <h3>Proposta de Valor Oferecida</h3>
+        <table class="values-table">
+            <thead>
+                <tr>
+                    <th style="background-color: #e74c3c;">Dor do Cliente</th>
+                    <th style="background-color: #27ae60;">Solução Oferecida</th>
+                    <th style="background-color: #3498db;">Benefício</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Entrega lenta</td>
+                    <td>Ultra-rápida (15-45 min)</td>
+                    <td>Satisfação e retenção de cliente</td>
+                </tr>
+                <tr>
+                    <td>Custo alto</td>
+                    <td>Redução 40-50% vs logística tradional</td>
+                    <td>Margens maiores ou preços competitivos</td>
+                </tr>
+                <tr>
+                    <td>Impacto ambiental</td>
+                    <td>Zero emissões directas</td>
+                    <td>Cumprimento metas ESG</td>
+                </tr>
+                <tr>
+                    <td>Restrições horárias</td>
+                    <td>Operação 24/7</td>
+                    <td>Flexibilidade máxima</td>
+                </tr>
+                <tr>
+                    <td>Rastreamento impreciso</td>
+                    <td>Rastreamento em tempo real via GPS</td>
+                    <td>Transparência total</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SEÇÃO 2.5: ANÁLISE PASTEL -->
+    <section class="intro-section">
+        <h2>2.5 Análise PASTEL: Fatores Externos Estratégicos</h2>
+        
+        <p>A análise PASTEL (Político, Ambiental, Social, Tecnológico, Econômico, Legal) fornece uma visão holística do ambiente externo em que a empresa atuará.</p>
+        
+        <h3>🏛️ POLÍTICO</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Regulação ANAC</strong></td>
+                    <td>Normas em evolução contínua; ainda em fase de flexibilização</td>
+                    <td>Médio/Alto</td>
+                </tr>
+                <tr>
+                    <td><strong>Incentivos Governamentais</strong></td>
+                    <td>Programas de apoio a startups tech crescendo</td>
+                    <td>Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Parcerias Públicas</strong></td>
+                    <td>Oportunidades com prefeituras para entregas municipais</td>
+                    <td>Médio</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Influenciar regulação através de advocacy; abrir novos mercados com apoio estatal</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Mudanças abruptas em regulação poderiam paralisar operações</div>
+        
+        <h3>🌱 AMBIENTAL</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Emissão de CO2</strong></td>
+                    <td>Drones elétricos = 0 emissões directas (vs. motos/carros)</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td><strong>Energia Renovável</strong></td>
+                    <td>Hubs podem usar painéis solares</td>
+                    <td>Muito Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Resíduos</strong></td>
+                    <td>Baterias recicláveis; estrutura limpa</td>
+                    <td>Positivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Marketing green; certificações ESG; atração de investidores ESG</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Custo de baterias sustentáveis ainda elevado</div>
+        
+        <h3>👥 SOCIAL</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Aceitação Tecnológica</strong></td>
+                    <td>Gen Z e millennials abraçam inovação</td>
+                    <td>Muito Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Segurança Urbana</strong></td>
+                    <td>Preocupação com drones em espaços urbanos</td>
+                    <td>Médio (pode ser contornado)</td>
+                </tr>
+                <tr>
+                    <td><strong>Empregos</strong></td>
+                    <td>Criação de novos postos (pilotos, manutenção, software)</td>
+                    <td>Positivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Narrativa de inovação e jobs; educação sobre segurança</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Resistência de motoristas de entrega; percepção de privacidade sobre voos urbanos</div>
+        
+        <h3>💻 TECNOLÓGICO</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>GPS/IA/Sensores</strong></td>
+                    <td>Tecnologias maduras e acessíveis</td>
+                    <td>Muito Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Baterias</strong></td>
+                    <td>LiPo melhorando; autonomia crescente (~30km)</td>
+                    <td>Positivo (em melhoria)</td>
+                </tr>
+                <tr>
+                    <td><strong>5G/Conectividade</strong></td>
+                    <td>Expansão permite comunicação confiável com frotas</td>
+                    <td>Positivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Diferenciação via software proprietário; parcerias tech</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Competição de Big tech (Amazon, Google) com recursos ilimitados</div>
+        
+        <h3>💰 ECONÔMICO</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>E-commerce em Expansão</strong></td>
+                    <td>Crescimento 16-20% a.a.</td>
+                    <td>Muito Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Custos Logísticos</strong></td>
+                    <td>Pressão para redução = oportunidade</td>
+                    <td>Muito Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Poder de Compra</strong></td>
+                    <td>Classe C crescendo; disposição para pay premium</td>
+                    <td>Positivo</td>
+                </tr>
+                <tr>
+                    <td><strong>Mercado Potencial</strong></td>
+                    <td>Bilhões em TAM; penetração ainda baixa</td>
+                    <td>Muito Positivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Cenário hiper-competitivo ideal para inovação; fusões/aquisições pelo sector</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Recessão econômica reduz demanda; inflação aumenta custos de capex</div>
+        
+        <h3>⚖️ LEGAL</h3>
+        <table class="pastel-table">
+            <thead>
+                <tr>
+                    <th>Ponto</th>
+                    <th>Análise</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Regulação ANAC</strong></td>
+                    <td>Norma 327-E; ainda em refinamento</td>
+                    <td>Médio</td>
+                </tr>
+                <tr>
+                    <td><strong>Seguros</strong></td>
+                    <td>Mercado de seguros para drones em formação</td>
+                    <td>Médio (risco)</td>
+                </tr>
+                <tr>
+                    <td><strong>Responsabilidade Civil</strong></td>
+                    <td>Legislação ainda limitada; precedentes em formação</td>
+                    <td>Médio (incerteza)</td>
+                </tr>
+                <tr>
+                    <td><strong>LGPD/Privacidade</strong></td>
+                    <td>Dados de voos devem estar conformes</td>
+                    <td>Médio</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="opportunity"><strong>✅ Oportunidades:</strong> Establishment de padrões de conformidade; liderança em boas práticas</div>
+        <div class="pain-point"><strong>⚠️ Ameaças:</strong> Mudanças regulatórias abruptas; marcos de responsabilidade indefinidos</div>
+    </section>
+
 </html>
